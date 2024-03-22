@@ -2,9 +2,9 @@
 
 // const CSVdata = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
 
-// console.log(CSVdata.split(' ,'))
+// console.log(CSVdata.split(' ,')) ---- dont need but want to keep comment.
 // let rows = CSVdata.split('\n')
-// console.log(rows)
+// console.log(rows)---- dont need but want to keep comment.
 
 // for (let i in rows) {
 //     let cell = rows[i].split(',')
@@ -12,35 +12,38 @@
 //     console.log(cell)
 // }
 
-// Part 2
+// // Part 2
 
 const CSVdata = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
 
-// console.log(CSVdata.split(' ,'))
+console.log(CSVdata.split(' ,'))
 let rows = CSVdata.split('\n')
-// console.log(rows)
+// console.log(rows) ---- dont need but want to keep comment.
+
 const firstData = []
 
 for (let i in rows) {
     let cell = rows[i].split(',')
     firstData.push(cell)
 
-    // console.log(cell)
+    // console.log(cell) ---- dont need but want to keep comment.
+
 }
-// console.log("first", firstData)
+//  console.log("first", firstData)
 
 
 
-// // Part 3
-// for (let i = 1; i < firstData.length; i++) {
-// const object = {}
-// object.id = firstData[i][0]
-// object.name = firstData[i][1]
-// object.occupation = firstData[i][2]
-// object.age = firstData[i][3]
+// // // Part 3
 
-//      // console.log(object)
-// }
+for (let i = 1; i < firstData.length; i++) {
+const object = {}
+object.id = firstData[i][0]
+object.name = firstData[i][1]
+object.occupation = firstData[i][2]
+object.age = firstData[i][3]
+
+    //  console.log(object)
+}
 
 
 // Part 4
@@ -57,23 +60,18 @@ object.occupation = firstData[i][2]
      newArr.push(object)
 }
 
-console.log(newArr)
-newArr.pop()
-
-console.log(newArr)
+// console.log(newArr)
+// newArr.pop()
 
 // splice(index,arrayElemetnsTOdelete,thingYouwanttoadd)
 
-newArr.splice(1,0, {id: "48", name: "Barry", occupation: "Runner", age: "25" })
-console.log (newArr)
+// newArr.splice(1,0, {id: "48", name: "Barry", occupation: "Runner", age: "25" })
+// console.log (newArr)
 
-newArr.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" })
-console.log (newArr)
+// newArr.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" })
+// console.log (newArr)
 
-// console.log(newData[0].Age+newData[1].Age+newData[2].Age+newData[3].Age)
-// console.log
-
-// Part 5
+// // Part 5
 
 // let newData = [
 //     { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
